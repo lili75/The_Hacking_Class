@@ -1,0 +1,1164 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (81.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (72.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateStudents (20180725162317)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180725162317"]]
+  ↳ bin/rails:9
+  [1m[35m (61.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-25 16:30:02.398688"], ["updated_at", "2018-07-25 16:30:02.398688"]]
+  ↳ bin/rails:9
+  [1m[35m (59.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Serita"], ["created_at", "2018-07-25 16:31:45.465836"], ["updated_at", "2018-07-25 16:31:45.465836"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (59.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Noel"], ["created_at", "2018-07-25 16:31:45.527458"], ["updated_at", "2018-07-25 16:31:45.527458"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (39.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Elinore"], ["created_at", "2018-07-25 16:31:45.569244"], ["updated_at", "2018-07-25 16:31:45.569244"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (48.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Lannie"], ["created_at", "2018-07-25 16:31:45.619159"], ["updated_at", "2018-07-25 16:31:45.619159"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (56.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Hyman"], ["created_at", "2018-07-25 16:31:45.677546"], ["updated_at", "2018-07-25 16:31:45.677546"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (56.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Vernon"], ["created_at", "2018-07-25 16:31:45.735716"], ["updated_at", "2018-07-25 16:31:45.735716"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (56.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Charlotte"], ["created_at", "2018-07-25 16:31:45.794031"], ["updated_at", "2018-07-25 16:31:45.794031"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (56.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cedrick"], ["created_at", "2018-07-25 16:31:45.854263"], ["updated_at", "2018-07-25 16:31:45.854263"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (53.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Emelia"], ["created_at", "2018-07-25 16:31:45.910892"], ["updated_at", "2018-07-25 16:31:45.910892"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (56.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Deneen"], ["created_at", "2018-07-25 16:31:45.970405"], ["updated_at", "2018-07-25 16:31:45.970405"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (54.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCours (20180725163449)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180725163449_create_cours.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "cours" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nom_cour" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180725163449_create_cours.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180725163449"]]
+  ↳ bin/rails:9
+  [1m[35m (87.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Moises"], ["created_at", "2018-07-25 16:38:19.702228"], ["updated_at", "2018-07-25 16:38:19.702228"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (51.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Billy"], ["created_at", "2018-07-25 16:38:19.755806"], ["updated_at", "2018-07-25 16:38:19.755806"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (48.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cheree"], ["created_at", "2018-07-25 16:38:19.805585"], ["updated_at", "2018-07-25 16:38:19.805585"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (56.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Fredric"], ["created_at", "2018-07-25 16:38:19.863747"], ["updated_at", "2018-07-25 16:38:19.863747"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (48.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Irving"], ["created_at", "2018-07-25 16:38:19.914101"], ["updated_at", "2018-07-25 16:38:19.914101"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (56.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jayson"], ["created_at", "2018-07-25 16:38:19.972297"], ["updated_at", "2018-07-25 16:38:19.972297"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (70.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ray"], ["created_at", "2018-07-25 16:38:20.045234"], ["updated_at", "2018-07-25 16:38:20.045234"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (68.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Mose"], ["created_at", "2018-07-25 16:38:20.117610"], ["updated_at", "2018-07-25 16:38:20.117610"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (54.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bradly"], ["created_at", "2018-07-25 16:38:20.176425"], ["updated_at", "2018-07-25 16:38:20.176425"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (62.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Twanna"], ["created_at", "2018-07-25 16:38:20.241729"], ["updated_at", "2018-07-25 16:38:20.241729"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (55.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCours (20180725163449)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "cours"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180725163449"]]
+  ↳ bin/rails:9
+  [1m[35m (72.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateStudents (20180725162317)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "students"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180725162317"]]
+  ↳ bin/rails:9
+  [1m[35m (76.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateStudents (20180725162317)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "cour_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_students_on_cour_id" ON "students" ("cour_id")[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180725162317"]]
+  ↳ bin/rails:9
+  [1m[35m (66.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateCours (20180725163449)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "cours" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nom_cour" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180725163449_create_cours.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180725163449"]]
+  ↳ bin/rails:9
+  [1m[35m (63.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Nicky"], ["created_at", "2018-07-25 16:40:23.747220"], ["updated_at", "2018-07-25 16:40:23.747220"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (72.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Altagracia"], ["created_at", "2018-07-25 16:40:23.821880"], ["updated_at", "2018-07-25 16:40:23.821880"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (56.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Howard"], ["created_at", "2018-07-25 16:40:23.880229"], ["updated_at", "2018-07-25 16:40:23.880229"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (56.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Angelique"], ["created_at", "2018-07-25 16:40:23.938528"], ["updated_at", "2018-07-25 16:40:23.938528"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (56.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Arlie"], ["created_at", "2018-07-25 16:40:23.996748"], ["updated_at", "2018-07-25 16:40:23.996748"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (56.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Marie"], ["created_at", "2018-07-25 16:40:24.055253"], ["updated_at", "2018-07-25 16:40:24.055253"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Elza"], ["created_at", "2018-07-25 16:40:24.122086"], ["updated_at", "2018-07-25 16:40:24.122086"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Thomas"], ["created_at", "2018-07-25 16:40:24.189017"], ["updated_at", "2018-07-25 16:40:24.189017"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Mohammad"], ["created_at", "2018-07-25 16:40:24.255342"], ["updated_at", "2018-07-25 16:40:24.255342"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Seth"], ["created_at", "2018-07-25 16:40:24.313722"], ["updated_at", "2018-07-25 16:40:24.313722"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Valentin"], ["created_at", "2018-07-25 16:40:24.380789"], ["updated_at", "2018-07-25 16:40:24.380789"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Barry"], ["created_at", "2018-07-25 16:40:24.447373"], ["updated_at", "2018-07-25 16:40:24.447373"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tyrell"], ["created_at", "2018-07-25 16:40:24.514135"], ["updated_at", "2018-07-25 16:40:24.514135"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessie"], ["created_at", "2018-07-25 16:40:24.581057"], ["updated_at", "2018-07-25 16:40:24.581057"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Sylvie"], ["created_at", "2018-07-25 16:40:24.647688"], ["updated_at", "2018-07-25 16:40:24.647688"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (95.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCours (20180725163449)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "cours"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180725163449"]]
+  ↳ bin/rails:9
+  [1m[35m (365.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateStudents (20180725162317)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "students"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180725162317"]]
+  ↳ bin/rails:9
+  [1m[35m (76.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateStudents (20180725162317)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "cour_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_students_on_cour_id" ON "students" ("cour_id")[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180725162317"]]
+  ↳ bin/rails:9
+  [1m[35m (60.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateCours (20180725163449)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "cours" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nom_cour" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180725163449_create_cours.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180725163449"]]
+  ↳ bin/rails:9
+  [1m[35m (63.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.3ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Twinleaf Town"], ["created_at", "2018-07-25 16:42:16.836863"], ["updated_at", "2018-07-25 16:42:16.836863"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (59.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Lentimas Town"], ["created_at", "2018-07-25 16:42:16.898213"], ["updated_at", "2018-07-25 16:42:16.898213"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (64.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.3ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Lacunosa Town"], ["created_at", "2018-07-25 16:42:16.964689"], ["updated_at", "2018-07-25 16:42:16.964689"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (65.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Blackthorn City"], ["created_at", "2018-07-25 16:42:17.031749"], ["updated_at", "2018-07-25 16:42:17.031749"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (64.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.3ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Cyllage City"], ["created_at", "2018-07-25 16:42:17.098391"], ["updated_at", "2018-07-25 16:42:17.098391"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (56.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jade"], ["created_at", "2018-07-25 16:42:17.165342"], ["updated_at", "2018-07-25 16:42:17.165342"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Maxie"], ["created_at", "2018-07-25 16:42:17.232207"], ["updated_at", "2018-07-25 16:42:17.232207"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (65.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Eleni"], ["created_at", "2018-07-25 16:42:17.299705"], ["updated_at", "2018-07-25 16:42:17.299705"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (54.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tory"], ["created_at", "2018-07-25 16:42:17.357375"], ["updated_at", "2018-07-25 16:42:17.357375"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Moses"], ["created_at", "2018-07-25 16:42:17.415900"], ["updated_at", "2018-07-25 16:42:17.415900"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alice"], ["created_at", "2018-07-25 16:42:17.473932"], ["updated_at", "2018-07-25 16:42:17.473932"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Rhonda"], ["created_at", "2018-07-25 16:42:17.532358"], ["updated_at", "2018-07-25 16:42:17.532358"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (57.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Contessa"], ["created_at", "2018-07-25 16:42:17.591017"], ["updated_at", "2018-07-25 16:42:17.591017"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (55.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Steve"], ["created_at", "2018-07-25 16:42:17.649045"], ["updated_at", "2018-07-25 16:42:17.649045"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (65.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Lan"], ["created_at", "2018-07-25 16:42:17.716157"], ["updated_at", "2018-07-25 16:42:17.716157"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.3ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Sootopolis City"], ["created_at", "2018-07-25 16:42:59.472157"], ["updated_at", "2018-07-25 16:42:59.472157"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (69.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.3ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Aquacorde Town"], ["created_at", "2018-07-25 16:42:59.543216"], ["updated_at", "2018-07-25 16:42:59.543216"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (62.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Frontier Access"], ["created_at", "2018-07-25 16:42:59.608506"], ["updated_at", "2018-07-25 16:42:59.608506"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (64.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Jubilife City"], ["created_at", "2018-07-25 16:42:59.675372"], ["updated_at", "2018-07-25 16:42:59.675372"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (64.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Cinnabar Island"], ["created_at", "2018-07-25 16:42:59.741663"], ["updated_at", "2018-07-25 16:42:59.741663"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (56.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-25 16:42:59.810525"], ["updated_at", "2018-07-25 16:42:59.810525"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (53.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-25 16:42:59.866724"], ["updated_at", "2018-07-25 16:42:59.866724"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-25 16:42:59.925366"], ["updated_at", "2018-07-25 16:42:59.925366"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (55.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-25 16:42:59.983367"], ["updated_at", "2018-07-25 16:42:59.983367"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-25 16:43:00.041831"], ["updated_at", "2018-07-25 16:43:00.041831"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (55.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-25 16:43:00.099745"], ["updated_at", "2018-07-25 16:43:00.099745"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (66.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-25 16:43:00.167819"], ["updated_at", "2018-07-25 16:43:00.167819"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (63.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-25 16:43:00.233562"], ["updated_at", "2018-07-25 16:43:00.233562"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (64.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-25 16:43:00.300638"], ["updated_at", "2018-07-25 16:43:00.300638"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (73.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-25 16:43:00.375766"], ["updated_at", "2018-07-25 16:43:00.375766"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (65.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.3ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Driftveil City"], ["created_at", "2018-07-25 16:43:12.031185"], ["updated_at", "2018-07-25 16:43:12.031185"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (80.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Nimbasa City"], ["created_at", "2018-07-25 16:43:12.113943"], ["updated_at", "2018-07-25 16:43:12.113943"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (64.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "White Forest"], ["created_at", "2018-07-25 16:43:12.180666"], ["updated_at", "2018-07-25 16:43:12.180666"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (56.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "One Island"], ["created_at", "2018-07-25 16:43:12.238681"], ["updated_at", "2018-07-25 16:43:12.238681"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (82.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Floaroma Town"], ["created_at", "2018-07-25 16:43:12.322662"], ["updated_at", "2018-07-25 16:43:12.322662"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (53.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:12.383415"], ["updated_at", "2018-07-25 16:43:12.383415"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (53.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:12.438738"], ["updated_at", "2018-07-25 16:43:12.438738"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:12.497268"], ["updated_at", "2018-07-25 16:43:12.497268"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:12.555463"], ["updated_at", "2018-07-25 16:43:12.555463"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:12.613931"], ["updated_at", "2018-07-25 16:43:12.613931"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (73.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:12.689584"], ["updated_at", "2018-07-25 16:43:12.689584"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (63.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:12.755610"], ["updated_at", "2018-07-25 16:43:12.755610"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (65.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:12.822276"], ["updated_at", "2018-07-25 16:43:12.822276"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (73.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:12.897487"], ["updated_at", "2018-07-25 16:43:12.897487"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (73.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:12.972403"], ["updated_at", "2018-07-25 16:43:12.972403"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (73.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCours (20180725163449)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "cours"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180725163449"]]
+  ↳ bin/rails:9
+  [1m[35m (58.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateStudents (20180725162317)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "students"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180725162317"]]
+  ↳ bin/rails:9
+  [1m[35m (71.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateStudents (20180725162317)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "cours_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_students_on_cours_id" ON "students" ("cours_id")[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180725162317"]]
+  ↳ bin/rails:9
+  [1m[35m (58.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateCours (20180725163449)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "cours" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nom_cour" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180725163449_create_cours.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180725163449"]]
+  ↳ bin/rails:9
+  [1m[35m (63.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Shalour City"], ["created_at", "2018-07-25 16:43:57.255080"], ["updated_at", "2018-07-25 16:43:57.255080"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (62.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Pallet Town"], ["created_at", "2018-07-25 16:43:57.320419"], ["updated_at", "2018-07-25 16:43:57.320419"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (72.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Laverre City"], ["created_at", "2018-07-25 16:43:57.395449"], ["updated_at", "2018-07-25 16:43:57.395449"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (72.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Lilycove City"], ["created_at", "2018-07-25 16:43:57.470548"], ["updated_at", "2018-07-25 16:43:57.470548"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (74.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCour Create (0.7ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Castelia City"], ["created_at", "2018-07-25 16:43:57.546772"], ["updated_at", "2018-07-25 16:43:57.546772"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (71.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:57.630196"], ["updated_at", "2018-07-25 16:43:57.630196"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (59.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:57.693313"], ["updated_at", "2018-07-25 16:43:57.693313"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:57.751444"], ["updated_at", "2018-07-25 16:43:57.751444"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (48.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:57.801751"], ["updated_at", "2018-07-25 16:43:57.801751"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (56.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:57.859389"], ["updated_at", "2018-07-25 16:43:57.859389"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (50.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:57.910838"], ["updated_at", "2018-07-25 16:43:57.910838"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (46.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:57.959391"], ["updated_at", "2018-07-25 16:43:57.959391"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (48.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:58.009985"], ["updated_at", "2018-07-25 16:43:58.009985"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (47.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:58.059320"], ["updated_at", "2018-07-25 16:43:58.059320"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (50.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a"], ["created_at", "2018-07-25 16:43:58.111727"], ["updated_at", "2018-07-25 16:43:58.111727"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (46.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 1], ["name", "Dorian"], ["created_at", "2018-07-25 16:46:34.372491"], ["updated_at", "2018-07-25 16:46:34.372491"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (52.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 4], ["name", "Jalisa"], ["created_at", "2018-07-25 16:46:34.427487"], ["updated_at", "2018-07-25 16:46:34.427487"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (56.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 5], ["name", "Noel"], ["created_at", "2018-07-25 16:46:34.485593"], ["updated_at", "2018-07-25 16:46:34.485593"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (56.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 4], ["name", "Eunice"], ["created_at", "2018-07-25 16:46:34.543982"], ["updated_at", "2018-07-25 16:46:34.543982"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (56.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 2], ["name", "Suzanne"], ["created_at", "2018-07-25 16:46:34.602266"], ["updated_at", "2018-07-25 16:46:34.602266"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (48.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 5], ["name", "Juana"], ["created_at", "2018-07-25 16:46:34.652326"], ["updated_at", "2018-07-25 16:46:34.652326"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (58.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 4], ["name", "Samantha"], ["created_at", "2018-07-25 16:46:34.713011"], ["updated_at", "2018-07-25 16:46:34.713011"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (45.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 5], ["name", "Willis"], ["created_at", "2018-07-25 16:46:34.761524"], ["updated_at", "2018-07-25 16:46:34.761524"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (46.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.9ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 2], ["name", "Cassy"], ["created_at", "2018-07-25 16:46:34.811471"], ["updated_at", "2018-07-25 16:46:34.811471"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (46.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 3], ["name", "Brooks"], ["created_at", "2018-07-25 16:46:34.861285"], ["updated_at", "2018-07-25 16:46:34.861285"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (46.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Geosenge Town"], ["created_at", "2018-07-25 16:46:34.916301"], ["updated_at", "2018-07-25 16:46:34.916301"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (61.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Oreburgh City"], ["created_at", "2018-07-25 16:46:34.979637"], ["updated_at", "2018-07-25 16:46:34.979637"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (64.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Cerulean City"], ["created_at", "2018-07-25 16:46:35.046391"], ["updated_at", "2018-07-25 16:46:35.046391"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (73.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCour Create (0.5ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Undella Town"], ["created_at", "2018-07-25 16:46:35.123006"], ["updated_at", "2018-07-25 16:46:35.123006"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (70.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Black City"], ["created_at", "2018-07-25 16:46:35.196431"], ["updated_at", "2018-07-25 16:46:35.196431"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (56.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCours (20180725163449)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "cours"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180725163449"]]
+  ↳ bin/rails:9
+  [1m[35m (69.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateStudents (20180725162317)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "students"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180725162317"]]
+  ↳ bin/rails:9
+  [1m[35m (62.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateStudents (20180725162317)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "cours_id" integer, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_students_on_cours_id" ON "students" ("cours_id")[0m
+  ↳ db/migrate/20180725162317_create_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180725162317"]]
+  ↳ bin/rails:9
+  [1m[35m (67.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateCours (20180725163449)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "cours" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nom_cour" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180725163449_create_cours.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180725163449"]]
+  ↳ bin/rails:9
+  [1m[35m (63.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 1], ["name", "Elvera"], ["created_at", "2018-07-25 16:46:51.450293"], ["updated_at", "2018-07-25 16:46:51.450293"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (48.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 4], ["name", "Lavelle"], ["created_at", "2018-07-25 16:46:51.500814"], ["updated_at", "2018-07-25 16:46:51.500814"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (56.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 5], ["name", "Terry"], ["created_at", "2018-07-25 16:46:51.558885"], ["updated_at", "2018-07-25 16:46:51.558885"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (56.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 5], ["name", "Dorian"], ["created_at", "2018-07-25 16:46:51.617308"], ["updated_at", "2018-07-25 16:46:51.617308"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (56.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 1], ["name", "Constance"], ["created_at", "2018-07-25 16:46:51.675539"], ["updated_at", "2018-07-25 16:46:51.675539"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (56.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 4], ["name", "Johnie"], ["created_at", "2018-07-25 16:46:51.733748"], ["updated_at", "2018-07-25 16:46:51.733748"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (56.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 4], ["name", "Vincenzo"], ["created_at", "2018-07-25 16:46:51.792175"], ["updated_at", "2018-07-25 16:46:51.792175"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (48.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 1], ["name", "Rona"], ["created_at", "2018-07-25 16:46:51.842169"], ["updated_at", "2018-07-25 16:46:51.842169"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (48.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 2], ["name", "Aiko"], ["created_at", "2018-07-25 16:46:51.892447"], ["updated_at", "2018-07-25 16:46:51.892447"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (47.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("cours_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["cours_id", 4], ["name", "Chance"], ["created_at", "2018-07-25 16:46:51.942304"], ["updated_at", "2018-07-25 16:46:51.942304"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (56.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCour Create (0.6ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Shalour City"], ["created_at", "2018-07-25 16:46:52.005961"], ["updated_at", "2018-07-25 16:46:52.005961"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (69.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Floccesy Town"], ["created_at", "2018-07-25 16:46:52.077991"], ["updated_at", "2018-07-25 16:46:52.077991"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (56.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCour Create (0.6ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Solaceon Town"], ["created_at", "2018-07-25 16:46:52.137373"], ["updated_at", "2018-07-25 16:46:52.137373"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (54.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Floaroma Town"], ["created_at", "2018-07-25 16:46:52.194735"], ["updated_at", "2018-07-25 16:46:52.194735"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (56.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCour Create (0.2ms)[0m  [1m[32mINSERT INTO "cours" ("nom_cour", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nom_cour", "Vaniville Town"], ["created_at", "2018-07-25 16:46:52.253114"], ["updated_at", "2018-07-25 16:46:52.253114"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (64.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
